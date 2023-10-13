@@ -16,7 +16,11 @@ import sport from "../assets/icons/sport.png";
 import edu from "../assets/icons/edu.png";
 import fashion from "../assets/icons/fashion.png";
 import oktagon from "../assets/icons/oktagon.png";
-import kisd from "../assets/icons/kisd.png";
+import kids from "../assets/icons/kids.png";
+import setting from "../assets/icons/setting.png";
+import undov from "../assets/icons/undov.png";
+import finish from "../assets/icons/finish.png";
+import report from "../assets/icons/report.png";
 
 export const sidebar = [
   {
@@ -95,10 +99,10 @@ export const sidebar = [
   {
     id: 6,
     data: [
-      { id: 1, name: "Settings", icon: home },
-      { id: 2, name: "Complains", icon: home },
-      { id: 3, name: "Reference", icon: home },
-      { id: 4, name: "Post and view", icon: home },
+      { id: 1, name: "Settings", icon: setting },
+      { id: 2, name: "Complains", icon: finish },
+      { id: 3, name: "Reference", icon: undov },
+      { id: 4, name: "Post and view", icon: report },
     ],
   },
   false,
