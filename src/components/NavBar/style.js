@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Contaier = styled.div`
-  width: calc(100vw - 350px);
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -12,6 +12,8 @@ export const Contaier = styled.div`
   }
   border: none;
   padding: 0 5px;
+  margin-left: 15px;
+  background: #fff;
 `;
 
 export const Button = styled(NavLink)`
