@@ -20,6 +20,22 @@ const index = () => {
       <div>jasurbek</div>
       <div>jasurbek</div>
       <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
+      <div>jasurbek</div>
     </Contaier>
   );
 };

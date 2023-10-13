@@ -1,8 +1,22 @@
 import React from "react";
+import NavBar from "../NavBar";
 import { Container } from "./style";
 
-const index = () => {
-  return <Container>Body</Container>;
+const Index = () => {
+  return (
+    <Container>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "red",
+        }}
+      >
+        <NavBar />
+      </div>
+    </Container>
+  );
 };
 
-export default index;
+export default Index;
