@@ -6,10 +6,10 @@ import VideoCart from "../VideoCart";
 import styled from "styled-components";
 
 const Div = styled.div`
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 45px 20px 0 23px;
-  flex-wrap: wrap;
+  gap: 20px;
 `;
 
 const Index = () => {
@@ -20,7 +20,7 @@ const Index = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          width: "calc(100% - 330px)",
+          width: "calc(100% - 305px)",
           position: "fixed",
         }}
       >
