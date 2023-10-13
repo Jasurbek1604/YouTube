@@ -4,7 +4,6 @@ import { sidebar } from "../../utils/sidebar";
 
 const index = () => {
   const [data, setData] = useState([]);
-  console.log(data);
   return (
     <Container>
       {sidebar.map((item) =>

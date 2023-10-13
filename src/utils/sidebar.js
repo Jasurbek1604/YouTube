@@ -7,6 +7,16 @@ import your from "../assets/icons/your.png";
 import watch from "../assets/icons/watch.png";
 import liked from "../assets/icons/liked.png";
 import mix from "../assets/icons/mix.png";
+import trending from "../assets/icons/trending.png";
+import music from "../assets/icons/music.png";
+import boardcasts from "../assets/icons/boardcasts.png";
+import game from "../assets/icons/game.png";
+import news from "../assets/icons/news.png";
+import sport from "../assets/icons/sport.png";
+import edu from "../assets/icons/edu.png";
+import fashion from "../assets/icons/fashion.png";
+import oktagon from "../assets/icons/oktagon.png";
+import kisd from "../assets/icons/kisd.png";
 
 export const sidebar = [
   {
@@ -62,14 +72,14 @@ export const sidebar = [
     id: 4,
     title: "Navigator",
     data: [
-      { id: 1, name: "Trending", icon: home },
-      { id: 2, name: "Music", icon: home },
-      { id: 3, name: "Broadcasts", icon: home },
-      { id: 4, name: "Video games", icon: home },
-      { id: 5, name: "News", icon: home },
-      { id: 6, name: "Sport", icon: home },
-      { id: 7, name: "Education", icon: home },
-      { id: 8, name: "Fashion and beauty", icon: home },
+      { id: 1, name: "Trending", icon: trending },
+      { id: 2, name: "Music", icon: music },
+      { id: 3, name: "Broadcasts", icon: boardcasts },
+      { id: 4, name: "Video games", icon: game },
+      { id: 5, name: "News", icon: news },
+      { id: 6, name: "Sport", icon: sport },
+      { id: 7, name: "Education", icon: edu },
+      { id: 8, name: "Fashion and beauty", icon: fashion },
     ],
   },
   false,
@@ -77,8 +87,8 @@ export const sidebar = [
     id: 5,
     title: "Other options",
     data: [
-      { id: 1, name: "YouTube Creative S..", icon: home },
-      { id: 1, name: "YouTube kids", icon: home },
+      { id: 1, name: "YouTube Creative S..", icon: oktagon },
+      { id: 1, name: "YouTube kids", icon: kids },
     ],
   },
   false,
