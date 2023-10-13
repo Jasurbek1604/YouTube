@@ -10,14 +10,16 @@ import {
 } from "./style";
 import { sidebar } from "../../utils/sidebar";
 import { useSidebarContext } from "../../context/sidebarContext";
+import { useId } from "react";
 
 const index = () => {
   const [isOpen] = useSidebarContext();
+  const id = useId();
   return isOpen ? (
     <Container>
       {sidebar.map((item) =>
         item ? (
-          <Wrapper key={item.id}>
+          <Wrapper key={id}>
             {item.title && <Title>{item.title}</Title>}
             {item.data.map(({ id, name, icon }) => (
               <Items key={id}>
@@ -27,7 +29,7 @@ const index = () => {
             ))}
           </Wrapper>
         ) : (
-          <Line />
+          <Line key={id} />
         )
       )}
     </Container>
@@ -36,9 +38,9 @@ const index = () => {
       {sidebar.slice(0, 1).map(({ data }) => (
         <div>
           {data.map(({ id, name, icon }) => (
-            <Box ket={id}>
-              <Icon small src={icon} />
-              <Name small>{name}</Name>
+            <Box key={id}>
+              <Icon small="true" src={icon} />
+              <Name small="true">{name}</Name>
             </Box>
           ))}
         </div>
