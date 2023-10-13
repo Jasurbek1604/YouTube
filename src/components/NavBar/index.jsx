@@ -1,14 +1,12 @@
 import React from "react";
 import { Contaier, Button } from "./style";
-import { navbar } from "../../utils/navbar";
+import { categories } from "../../utils/body";
 
 const index = () => {
   return (
     <Contaier>
-      {navbar.map(({ id, name, path }) => (
-        <Button key={id} to={path}>
-          {name}
-        </Button>
+      {categories.map((e) => (
+        <Button>{e}</Button>
       ))}
     </Contaier>
   );

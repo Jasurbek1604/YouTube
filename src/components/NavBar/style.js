@@ -22,6 +22,7 @@ export const Button = styled(NavLink)`
   border: 1px solid rgb(151, 151, 151);
   padding: 5px 10px;
   border-radius: 8px;
+  white-space: nowrap;
   font-size: 16px;
   font-weight: 400;
   &:active,
