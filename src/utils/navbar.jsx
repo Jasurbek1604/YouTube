@@ -1,0 +1,18 @@
+export const navbar = [
+  { id: 1, name: "All" },
+  { id: 2, name: "Muic" },
+  { id: 3, name: "Movies" },
+  { id: 4, name: "Podcats" },
+  { id: 5, name: "Animation" },
+  { id: 6, name: "Viewed" },
+  { id: 7, name: "None" },
+  { id: 8, name: "IT" },
+  { id: 9, name: "All" },
+  { id: 10, name: "Muic" },
+  { id: 11, name: "Movies" },
+  { id: 12, name: "Podcats" },
+  { id: 13, name: "Animation" },
+  { id: 14, name: "Viewed" },
+  { id: 15, name: "None" },
+  { id: 16, name: "IT" },
+];

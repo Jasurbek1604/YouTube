@@ -10,7 +10,7 @@ const Index = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "red",
+          width: "100%",
         }}
       >
         <NavBar />
