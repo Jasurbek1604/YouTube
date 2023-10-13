@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  /* padding-left: 15px; */
+  padding-left: 5px;
 `;
 export const Title = styled.div`
   padding: 0 0 5px 10px;
@@ -32,22 +32,25 @@ export const Items = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 10px;
   width: 90%;
   margin: 1px auto;
-  transition: 0.3s;
+  transition: 0.1s;
   cursor: pointer;
   &:hover {
     background: gainsboro;
   }
+  &:active {
+    background: gray;
+  }
 `;
 export const Icon = styled.img`
-  width: 20px;
-  height: 20px;
+  width: ${({ small }) => (small ? "30px" : "20px")};
+  height: ${({ small }) => (small ? "30px" : "20px")};
 `;
 export const Name = styled.div`
-  font-size: 17px;
+  font-size: ${({ small }) => (small ? "12px" : "17px")};
   font-weight: 400;
 `;
 
@@ -56,4 +59,14 @@ export const Line = styled.div`
   border-bottom: 1px solid gray;
   width: 90%;
   margin: 0 auto;
+`;
+
+export const Box = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 2px;
+  margin: 20px 0;
 `;

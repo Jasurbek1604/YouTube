@@ -23,12 +23,14 @@ import voice from "../../assets/icons/voice.png";
 import cinema from "../../assets/icons/camera.png";
 import bell from "../../assets/icons/bell.png";
 import user from "../../assets/icons/user.png";
+import { useSidebarContext } from "../../context/sidebarContext";
 
 const index = () => {
+  const [isOpen, setIsOpen] = useSidebarContext();
   return (
     <Container>
       <Menu>
-        <Burger src={menu} />
+        <Burger src={menu} onClick={() => setIsOpen(!isOpen)} />
         <Logo src={logo} alt="logo" />
       </Menu>
       <Search>

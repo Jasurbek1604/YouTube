@@ -1,10 +1,19 @@
-import React, { useState } from "react";
-import { Container, Wrapper, Title, Items, Icon, Name, Line } from "./style";
+import {
+  Container,
+  Wrapper,
+  Title,
+  Items,
+  Icon,
+  Name,
+  Line,
+  Box,
+} from "./style";
 import { sidebar } from "../../utils/sidebar";
+import { useSidebarContext } from "../../context/sidebarContext";
 
 const index = () => {
-  const [data, setData] = useState([]);
-  return (
+  const [isOpen] = useSidebarContext();
+  return isOpen ? (
     <Container>
       {sidebar.map((item) =>
         item ? (
@@ -22,6 +31,19 @@ const index = () => {
         )
       )}
     </Container>
+  ) : (
+    <div>
+      {sidebar.slice(0, 1).map(({ data }) => (
+        <div>
+          {data.map(({ id, name, icon }) => (
+            <Box ket={id}>
+              <Icon small src={icon} />
+              <Name small>{name}</Name>
+            </Box>
+          ))}
+        </div>
+      ))}
+    </div>
   );
 };
 
