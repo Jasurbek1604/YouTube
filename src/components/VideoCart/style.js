@@ -29,7 +29,7 @@ export const None = styled.div``;
 export const Title = styled.div`
   color: black;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 25px;
 `;
 export const Bottom = styled.div`

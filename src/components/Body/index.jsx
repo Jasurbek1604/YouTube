@@ -10,6 +10,13 @@ const Div = styled.div`
   grid-template-columns: repeat(3, 1fr);
   margin: 45px 20px 0 23px;
   gap: 20px;
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px;
+  }
 `;
 
 const Index = () => {
